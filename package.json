@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@xstate/react": "^3.0.0",
-    "lingo3d-react": "^1.2.51",
+    "lingo3d-react": "^1.2.59",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "xstate": "^4.31.0"

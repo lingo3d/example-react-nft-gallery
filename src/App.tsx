@@ -35,6 +35,7 @@ function App() {
        bloomRadius={1}
        bloomStrength={0.3}
        bloomThreshold={0.8}
+       mapPhysics={1}
       >
         <Model src="gallery.glb" scale={20} physics="map" />
         <ThirdPersonCamera mouseControl active>
