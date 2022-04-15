@@ -1,1 +1,1 @@
-# react-ts-tailwind-starter
+# NFT Gallery Example
