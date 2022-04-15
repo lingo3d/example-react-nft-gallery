@@ -1,11 +1,11 @@
 import { useMachine } from '@xstate/react'
-import { Find, HTML, Keyboard, Model, Reticle, ThirdPersonCamera, types, useSpring, useWindowSize, World } from 'lingo3d-react'
+import { Find, HTML, Keyboard, Model, Reticle, ThirdPersonCamera, types, usePreload, useSpring, useWindowSize, World } from 'lingo3d-react'
 import { useRef, useState } from 'react'
 import './App.css'
 import poseMachine from './stateMachines/poseMachine'
 import AnimText from "@lincode/react-anim-text"
 
-function App() {
+const Game = () => {
   const botRef = useRef<types.Model>(null)
 
   const [pose, sendPose] = useMachine(poseMachine, {
@@ -52,6 +52,7 @@ function App() {
        outlineHiddenColor="red"
        outlinePulse={1000}
        outlinePattern="pattern.jpeg"
+       mapPhysics={1}
       >
         <Model src="gallery.glb" scale={20} physics="map">
           <Find
@@ -117,6 +118,24 @@ function App() {
       </World>
       <Reticle color="white" variant={7} />
     </>
+  )
+}
+
+const App = () => {
+  const progress = usePreload(
+    ["bot.fbx", "env.hdr", "falling.fbx", "gallery.glb", "idle.fbx", "pattern.jpeg", "running.fbx"],
+    "63.2mb"
+  )
+
+  if (progress < 100)
+    return (
+      <div className="w-full h-full absolute bg-black left-0 top-0 flex justify-center items-center text-white">
+        loading {Math.floor(progress)}%
+      </div>
+    )
+  
+  return (
+    <Game />
   )
 }
 
