@@ -1,5 +1,5 @@
 import { useMachine } from '@xstate/react'
-import { Find, HTML, Keyboard, Model, Reticle, ThirdPersonCamera, types, useSpring, World } from 'lingo3d-react'
+import { Find, HTML, Keyboard, Model, Reticle, ThirdPersonCamera, types, useSpring, useWindowSize, World } from 'lingo3d-react'
 import { useRef, useState } from 'react'
 import './App.css'
 import poseMachine from './stateMachines/poseMachine'
@@ -35,6 +35,9 @@ function App() {
   const xSpring = useSpring({ to: camX, bounce: 0 })
   const ySpring = useSpring({ to: camY, bounce: 0 })
   const zSpring = useSpring({ to: camZ, bounce: 0 })
+
+  const windowSize = useWindowSize()
+  const fov = windowSize.width < windowSize.height ? 100 : 75
 
   return (
     <>
@@ -77,6 +80,7 @@ function App() {
          innerY={ySpring}
          innerZ={zSpring}
          innerX={xSpring}
+         fov={fov}
         >
           <Model
            src="bot.fbx"

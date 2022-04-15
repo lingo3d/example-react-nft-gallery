@@ -320,9 +320,9 @@
   integrity sha512-G68dl19XeHMR+sLw42xW7zSxsFSG8dcl1OYGP10REesFUwQ5/RbMvfJ5CJPYERmitc8EyV9BUuppixZJtC5WwQ==
 
 "@lincode/reactivity@*":
-  version "1.0.53"
-  resolved "https://registry.yarnpkg.com/@lincode/reactivity/-/reactivity-1.0.53.tgz#21e26e43019501cbb0de82ce1950e586507cf491"
-  integrity sha512-X4bLMOgEKNcsEB346HGKwCU/NzH1ZNTq8xT9SqR8nQS1R3XHO53/3nufcux6E8u14BfRpllYlsb2bekgRiPn1g==
+  version "1.0.54"
+  resolved "https://registry.yarnpkg.com/@lincode/reactivity/-/reactivity-1.0.54.tgz#72b9a49076b1688ceaa8fde960ec0df8e089527c"
+  integrity sha512-QYqMO11icMzRwt6Rzc5KhQPA7s3HGOqyFht6+Cf8xiSSEASRsQp+QvdrTGV/xe8RItGZ6KOcPXN0GN25frGMSQ==
   dependencies:
     "@lincode/events" "*"
     "@lincode/promiselikes" "*"
@@ -523,9 +523,9 @@ camelcase-css@^2.0.1:
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
 caniuse-lite@^1.0.30001317:
-  version "1.0.30001331"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001331.tgz#41048f2a5cf0c3c6198f40207cd323388b3d4399"
-  integrity sha512-Y1xk6paHpUXKP/P6YjQv1xqyTbgAP05ycHBcRdQjTcyXlWol868sJJPlmk5ylOekw2BrucWes5jk+LvVd7WZ5Q==
+  version "1.0.30001332"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001332.tgz#39476d3aa8d83ea76359c70302eafdd4a1d727dd"
+  integrity sha512-10T30NYOEQtN6C11YGg411yebhvpnC6Z102+B95eAsN0oB6KUs01ivE8u+G6FMIRtIrVlYXhL+LUwQ3/hXwDWw==
 
 cannon-es@0.19.0:
   version "0.19.0"
@@ -622,9 +622,9 @@ dlv@^1.1.3:
   integrity sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==
 
 electron-to-chromium@^1.4.84:
-  version "1.4.107"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.107.tgz#564257014ab14033b4403a309c813123c58a3fb9"
-  integrity sha512-Huen6taaVrUrSy8o7mGStByba8PfOWWluHNxSHGBrCgEdFVLtvdQDBr9LBCF9Uci8SYxh28QNNMO0oC17wbGAg==
+  version "1.4.110"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.110.tgz#269208d7cf7e32123b1d87bf4e6e1fd9ac7ff51d"
+  integrity sha512-TvHZrkj9anfWkxgblHlNr4IMQdm2N6D0o8Wu1BDpSL/RKT4DHyUt/tvDFtApgZ+LGFL3U9EO4LRZ1eSlQ8xMYA==
 
 esbuild-android-64@0.14.36:
   version "0.14.36"
@@ -916,10 +916,10 @@ lilconfig@^2.0.5:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.5.tgz#19e57fd06ccc3848fd1891655b5a447092225b25"
   integrity sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==
 
-lingo3d-react@^1.2.63:
-  version "1.2.63"
-  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.63.tgz#4a8223511219e10b9d2062368e16698c64dff969"
-  integrity sha512-SbjbzN2VNCulbLXyfOqLFd1KopxsrUq2NEZJEaxRFs002w31xQfLXZLtDGaeFGipZtcoCwBb0m/xhXUCqvm4HQ==
+lingo3d-react@^1.2.64:
+  version "1.2.64"
+  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.64.tgz#373effbb801802a7d342f3435bc759d5e2198990"
+  integrity sha512-Z3fT+ucymSt5EOIl065BwO/IKGaTdkwb8cD5ERmo/q6lerfgIzxlQnGiKtKhzvYlmsvKnQTY5OmLK2Obg1ULRQ==
   dependencies:
     "@lincode/hooks" "*"
     "@lincode/promiselikes" "*"
@@ -929,16 +929,16 @@ lingo3d-react@^1.2.63:
     "@lincode/reactivity" "*"
     "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.10.71"
+    lingo3d "1.10.72"
     nanoid "3"
     popmotion "11"
     stats.js "^0.17.0"
     tweakpane "3"
 
-lingo3d@1.10.71:
-  version "1.10.71"
-  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.71.tgz#7291be02c69a22e120ef82da06b859be190aaf62"
-  integrity sha512-JPf2vXLFZNA8A8jZ/xSx4sMj1pbAOOHFigW1Tx3tMCy3O9KK+FefHn0LrakZR2ve6+R67MOsj5oHc6sxiLOTIg==
+lingo3d@1.10.72:
+  version "1.10.72"
+  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.72.tgz#66e81370f693302ad46845e0f28cf94382e54eb9"
+  integrity sha512-FDI1vJfjJlrl7qO40XMxkQ9X9h5u6QnW0giAxaCzi2QWD5iOmPBBxdnRYGtFgKI3b+nr6UmMtm0H61dI+1Nktw==
   dependencies:
     "@lincode/events" "*"
     "@lincode/filetypes" "*"
@@ -1180,9 +1180,9 @@ reusify@^1.0.4:
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
 rollup@^2.59.0:
-  version "2.70.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.70.1.tgz#824b1f1f879ea396db30b0fc3ae8d2fead93523e"
-  integrity sha512-CRYsI5EuzLbXdxC6RnYhOuRdtz4bhejPMSWjsFLfVM/7w/85n2szZv6yExqUXsBdz5KT8eoubeyDUDjhLHEslA==
+  version "2.70.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.70.2.tgz#808d206a8851628a065097b7ba2053bd83ba0c0d"
+  integrity sha512-EitogNZnfku65I1DD5Mxe8JYRUCy0hkK5X84IlDtUs+O6JRMpRciXTzyCUuX11b5L5pvjH+OmFXiQ3XjabcXgg==
   optionalDependencies:
     fsevents "~2.3.2"
 
