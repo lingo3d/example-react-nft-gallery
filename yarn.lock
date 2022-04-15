@@ -290,10 +290,10 @@
   dependencies:
     "@lincode/utils" "*"
 
-"@lincode/react-anim-text@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@lincode/react-anim-text/-/react-anim-text-1.0.0.tgz#bc0511463a01583c9f448fdb7d6136d7235fb418"
-  integrity sha512-nLN0hrO5cTaVi+O2Bu+qu/CraF068VaCBLW6YTpwdwc+eUbhERubyol+TXaRv6+EclFCsZKtd4eOyGBqfsyByw==
+"@lincode/react-anim-text@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@lincode/react-anim-text/-/react-anim-text-1.0.1.tgz#09856ccce7ec9b8d9dbc6e26872ce038be15f359"
+  integrity sha512-/9hkOP8xslVjjMdUFt0RG/TEDc2QlEaEILpTSVL9Fh+K2VFRevW5Zvu3nSIRgD4810wedQK6GsV9jkQBDV0XLg==
   dependencies:
     "@lincode/promiselikes" "*"
     popmotion "11"
@@ -314,10 +314,10 @@
     "@lincode/math" "*"
     react-device-detect "^2.1.2"
 
-"@lincode/react-reticle@*":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@lincode/react-reticle/-/react-reticle-1.1.0.tgz#f100eb8fea2a9db733ded46f203010aca93f502c"
-  integrity sha512-G68dl19XeHMR+sLw42xW7zSxsFSG8dcl1OYGP10REesFUwQ5/RbMvfJ5CJPYERmitc8EyV9BUuppixZJtC5WwQ==
+"@lincode/react-reticle@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@lincode/react-reticle/-/react-reticle-1.1.2.tgz#a52a220874d232745ad949d06fc1a9dc622514b6"
+  integrity sha512-4R1dV4nx1w1vamwhWDqt12SojsWc8+m5tC7IgXgdMGqh3zsxyimP2P0hdrovljcfYuZxk5VN0FfzCV11A9iS1g==
 
 "@lincode/reactivity@*":
   version "1.0.54"
@@ -916,29 +916,29 @@ lilconfig@^2.0.5:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.5.tgz#19e57fd06ccc3848fd1891655b5a447092225b25"
   integrity sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==
 
-lingo3d-react@^1.2.64:
-  version "1.2.64"
-  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.64.tgz#373effbb801802a7d342f3435bc759d5e2198990"
-  integrity sha512-Z3fT+ucymSt5EOIl065BwO/IKGaTdkwb8cD5ERmo/q6lerfgIzxlQnGiKtKhzvYlmsvKnQTY5OmLK2Obg1ULRQ==
+lingo3d-react@^1.2.67:
+  version "1.2.67"
+  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.67.tgz#d40fb37c57d1f533df825939e7130bd556382e84"
+  integrity sha512-QCRj9qX32m92BsGjWgHRXD7GhKp9CRAhMVRUn9VT36kyxF5zLAqF3ebSgaqIRGfOcdLAdcvzjkwPDbOA7pRj7Q==
   dependencies:
     "@lincode/hooks" "*"
     "@lincode/promiselikes" "*"
     "@lincode/react-global-state" "*"
     "@lincode/react-joystick" "*"
-    "@lincode/react-reticle" "*"
+    "@lincode/react-reticle" "1.1.2"
     "@lincode/reactivity" "*"
     "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.10.72"
+    lingo3d "1.10.73"
     nanoid "3"
     popmotion "11"
     stats.js "^0.17.0"
     tweakpane "3"
 
-lingo3d@1.10.72:
-  version "1.10.72"
-  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.72.tgz#66e81370f693302ad46845e0f28cf94382e54eb9"
-  integrity sha512-FDI1vJfjJlrl7qO40XMxkQ9X9h5u6QnW0giAxaCzi2QWD5iOmPBBxdnRYGtFgKI3b+nr6UmMtm0H61dI+1Nktw==
+lingo3d@1.10.73:
+  version "1.10.73"
+  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.73.tgz#518b4a97f224ca4612083df2d2871f40944bd186"
+  integrity sha512-gjhc3gWylYDBiCwPlbMAwEwc1EJbkVVpsKD0JfpaK2Dc2RrMUE+MwbGJfdO5efYcbhjU5vOCNK+Px/rUKZ2ypA==
   dependencies:
     "@lincode/events" "*"
     "@lincode/filetypes" "*"
