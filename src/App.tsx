@@ -1,8 +1,9 @@
 import { useMachine } from '@xstate/react'
-import { AreaLight, Editor, Keyboard, Model, ThirdPersonCamera, types, World } from 'lingo3d-react'
-import { useRef } from 'react'
+import { Find, HTML, Keyboard, Model, Reticle, ThirdPersonCamera, types, useSpring, World } from 'lingo3d-react'
+import { useRef, useState } from 'react'
 import './App.css'
 import poseMachine from './stateMachines/poseMachine'
+import AnimText from "@lincode/react-anim-text"
 
 function App() {
   const botRef = useRef<types.Model>(null)
@@ -25,6 +26,16 @@ function App() {
     }
   })
 
+  const [mouseOver, setMouseOver] = useState(false)
+
+  const camX = mouseOver ? 25 : 0
+  const camY = mouseOver ? 50 : 50
+  const camZ = mouseOver ? 50 : 200
+
+  const xSpring = useSpring({ to: camX, bounce: 0 })
+  const ySpring = useSpring({ to: camY, bounce: 0 })
+  const zSpring = useSpring({ to: camZ, bounce: 0 })
+
   return (
     <>
       <World
@@ -32,13 +43,41 @@ function App() {
        skybox="env.hdr"
        ambientOcclusion
        bloom
-       bloomRadius={1}
        bloomStrength={0.3}
+       bloomRadius={1}
        bloomThreshold={0.8}
-       mapPhysics={1}
+       outlineHiddenColor="red"
+       outlinePulse={1000}
+       outlinePattern="pattern.jpeg"
       >
-        <Model src="gallery.glb" scale={20} physics="map" />
-        <ThirdPersonCamera mouseControl active>
+        <Model src="gallery.glb" scale={20} physics="map">
+          <Find
+           name="a6_CRN.a6_0"
+           outline={mouseOver}
+           onMouseOver={() => setMouseOver(true)}
+           onMouseOut={() => setMouseOver(false)}
+          >
+            {mouseOver && (
+              <HTML>
+                <div style={{ color: "white" }}>
+                  <AnimText style={{ fontWeight: "bold", fontSize: 20 }} duration={1000}>
+                    Artwork Title
+                  </AnimText>
+                  <AnimText duration={1000}>
+                    Bird Watch
+                  </AnimText>
+                </div>
+              </HTML>
+            )}
+          </Find>
+        </Model>
+        <ThirdPersonCamera
+         mouseControl
+         active
+         innerY={ySpring}
+         innerZ={zSpring}
+         innerX={xSpring}
+        >
           <Model
            src="bot.fbx"
            ref={botRef}
@@ -72,6 +111,7 @@ function App() {
          }}
         />
       </World>
+      <Reticle color="white" variant={7} />
     </>
   )
 }
