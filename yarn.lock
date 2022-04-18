@@ -320,9 +320,9 @@
   integrity sha512-4R1dV4nx1w1vamwhWDqt12SojsWc8+m5tC7IgXgdMGqh3zsxyimP2P0hdrovljcfYuZxk5VN0FfzCV11A9iS1g==
 
 "@lincode/reactivity@*":
-  version "1.0.54"
-  resolved "https://registry.yarnpkg.com/@lincode/reactivity/-/reactivity-1.0.54.tgz#72b9a49076b1688ceaa8fde960ec0df8e089527c"
-  integrity sha512-QYqMO11icMzRwt6Rzc5KhQPA7s3HGOqyFht6+Cf8xiSSEASRsQp+QvdrTGV/xe8RItGZ6KOcPXN0GN25frGMSQ==
+  version "1.0.57"
+  resolved "https://registry.yarnpkg.com/@lincode/reactivity/-/reactivity-1.0.57.tgz#bd64544432429aa1735941571a8e12cb20802acd"
+  integrity sha512-POBdxFp9FYtt0j5n9e3xxdxD/CJX6u2TeaG4lr+UhSAooEc1djoyynVL642RwJ0q249tsULw1NdOKPPJac7LNw==
   dependencies:
     "@lincode/events" "*"
     "@lincode/promiselikes" "*"
@@ -622,9 +622,9 @@ dlv@^1.1.3:
   integrity sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==
 
 electron-to-chromium@^1.4.84:
-  version "1.4.110"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.110.tgz#269208d7cf7e32123b1d87bf4e6e1fd9ac7ff51d"
-  integrity sha512-TvHZrkj9anfWkxgblHlNr4IMQdm2N6D0o8Wu1BDpSL/RKT4DHyUt/tvDFtApgZ+LGFL3U9EO4LRZ1eSlQ8xMYA==
+  version "1.4.112"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.112.tgz#ae3a46231d4b2cdc223d6c4d227c06a9a96da7c2"
+  integrity sha512-BN5xdtPMlqUHo74daNNp/PwAGs4homs2RFxTB668wwkv7HAMvOY4L16Y5QrFxh69T2H2f1xWg8zQfrCDnpkvrA==
 
 esbuild-android-64@0.14.36:
   version "0.14.36"
@@ -916,10 +916,10 @@ lilconfig@^2.0.5:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.5.tgz#19e57fd06ccc3848fd1891655b5a447092225b25"
   integrity sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==
 
-lingo3d-react@^1.2.69:
-  version "1.2.69"
-  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.69.tgz#79a11deb962f80129bf44042fbdac7e7d111c9b8"
-  integrity sha512-V2KGQVRkgMv4IK+UGh9noqAzf6eXUTuGzQsSzmoTZw00a5ogzYK3fofWFwts9FxKg3BEzc3tB2V8N1YMoogftQ==
+lingo3d-react@^1.2.77:
+  version "1.2.77"
+  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.77.tgz#7b805eba4a03a961ef54d06fecad8fbe034bcbf3"
+  integrity sha512-k1sB4qzuKZniIullU/zZ5XOu6q+Wt5cQcSni/RHC81YwXynbZYSvxFYKIlRP+KDvl++IAgEvHEGpgW2MBFZ7PA==
   dependencies:
     "@lincode/hooks" "*"
     "@lincode/promiselikes" "*"
@@ -929,16 +929,16 @@ lingo3d-react@^1.2.69:
     "@lincode/reactivity" "*"
     "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.10.75"
+    lingo3d "1.10.89"
     nanoid "3"
     popmotion "11"
     stats.js "^0.17.0"
     tweakpane "3"
 
-lingo3d@1.10.75:
-  version "1.10.75"
-  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.75.tgz#81e58829f96a662a86a2bc38be93cdf7923bd629"
-  integrity sha512-ecYVKv4ytQnOEPA/+N6dJifIpqlBfoSN9ObKo3xyK4T5LSMLAyhtHcK2StOEVi9f9CWg0TVJbxqSBXt30m6Wkg==
+lingo3d@1.10.89:
+  version "1.10.89"
+  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.89.tgz#1afa8520fbceb7beb17ca9dcf7d35f4210036596"
+  integrity sha512-4pHOdSuSAix4lb1ZfOAXChW1Mr1cGA6usgPQPdswGKP0HWfM4fyZ3bOc+82DvKu6MSbkLj3F7hyv4QMnpt2AVw==
   dependencies:
     "@lincode/events" "*"
     "@lincode/filetypes" "*"
@@ -1016,9 +1016,9 @@ ms@2.1.2:
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
 nanoid@3, nanoid@^3.3.1:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.2.tgz#c89622fafb4381cd221421c69ec58547a1eec557"
-  integrity sha512-CuHBogktKwpm5g2sRgv83jEy2ijFzBwMoYA60orPDR7ynsLijJDqgsi4RDGj3OJpy3Ieb+LYwiRmIOGyytgITA==
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.3.tgz#fd8e8b7aa761fe807dba2d1b98fb7241bb724a25"
+  integrity sha512-p1sjXuopFs0xg+fPASzQ28agW1oHD7xDsd9Xkf3T15H3c/cifrFHVwrh74PdoklAPi+i7MdRsE47vm2r6JoB+w==
 
 node-releases@^2.0.2:
   version "2.0.3"
