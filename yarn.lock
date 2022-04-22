@@ -320,9 +320,9 @@
   integrity sha512-4R1dV4nx1w1vamwhWDqt12SojsWc8+m5tC7IgXgdMGqh3zsxyimP2P0hdrovljcfYuZxk5VN0FfzCV11A9iS1g==
 
 "@lincode/reactivity@*":
-  version "1.0.57"
-  resolved "https://registry.yarnpkg.com/@lincode/reactivity/-/reactivity-1.0.57.tgz#bd64544432429aa1735941571a8e12cb20802acd"
-  integrity sha512-POBdxFp9FYtt0j5n9e3xxdxD/CJX6u2TeaG4lr+UhSAooEc1djoyynVL642RwJ0q249tsULw1NdOKPPJac7LNw==
+  version "1.0.59"
+  resolved "https://registry.yarnpkg.com/@lincode/reactivity/-/reactivity-1.0.59.tgz#36afa01d95e10c4597417063c7f4d3fc858b6564"
+  integrity sha512-maMpRBTaMiSG+lXXsXH7AAjDM2EnFx25iHc8gZEuWvwjsHaGtufoWS3vp/A6W2LukP71CUvStjz9tm2Zs7vODA==
   dependencies:
     "@lincode/events" "*"
     "@lincode/promiselikes" "*"
@@ -381,9 +381,9 @@
   integrity sha512-vvS0IGhJ9Wq37vgldgF9Ohh5BA0RKapffhzyTN84170nt/0SCreXB9zIMLlbL4ZxvCKAKJ0080wJHS5aVhf20Q==
 
 "@types/lodash@4":
-  version "4.14.181"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.181.tgz#d1d3740c379fda17ab175165ba04e2d03389385d"
-  integrity sha512-n3tyKthHJbkiWhDZs3DkhkCzt2MexYHXlX0td5iMplyfwketaOeKboEVBqzceH7juqvEg3q5oUoBFxSLu7zFag==
+  version "4.14.182"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.182.tgz#05301a4d5e62963227eaafe0ce04dd77c54ea5c2"
+  integrity sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==
 
 "@types/prop-types@*":
   version "15.7.5"
@@ -916,10 +916,10 @@ lilconfig@^2.0.5:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.5.tgz#19e57fd06ccc3848fd1891655b5a447092225b25"
   integrity sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==
 
-lingo3d-react@^1.2.77:
-  version "1.2.77"
-  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.77.tgz#7b805eba4a03a961ef54d06fecad8fbe034bcbf3"
-  integrity sha512-k1sB4qzuKZniIullU/zZ5XOu6q+Wt5cQcSni/RHC81YwXynbZYSvxFYKIlRP+KDvl++IAgEvHEGpgW2MBFZ7PA==
+lingo3d-react@^1.2.88:
+  version "1.2.88"
+  resolved "https://registry.yarnpkg.com/lingo3d-react/-/lingo3d-react-1.2.88.tgz#a675cb891b2014300cbe265cccdc775955c38c44"
+  integrity sha512-s7iGr6FvVsizKN9uf7mgn82WLffR19RUs/IIbluG9rid561DpzK4z0Q+Mm7yJc7Bex5uhVPrH/AyWIcXh+3kRA==
   dependencies:
     "@lincode/hooks" "*"
     "@lincode/promiselikes" "*"
@@ -929,16 +929,16 @@ lingo3d-react@^1.2.77:
     "@lincode/reactivity" "*"
     "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.10.89"
+    lingo3d "1.10.102"
     nanoid "3"
     popmotion "11"
     stats.js "^0.17.0"
     tweakpane "3"
 
-lingo3d@1.10.89:
-  version "1.10.89"
-  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.89.tgz#1afa8520fbceb7beb17ca9dcf7d35f4210036596"
-  integrity sha512-4pHOdSuSAix4lb1ZfOAXChW1Mr1cGA6usgPQPdswGKP0HWfM4fyZ3bOc+82DvKu6MSbkLj3F7hyv4QMnpt2AVw==
+lingo3d@1.10.102:
+  version "1.10.102"
+  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.102.tgz#279ddbbd44fbed943a12a186b64d2b3fb972d10d"
+  integrity sha512-l/DN56aLZTsswPF6WLMkpftq2IMwnxbHEyFgPAJ4/bgIBC52C49n3c1+YYI5g2szAMOTHpBklSUrPPEq1EdnGA==
   dependencies:
     "@lincode/events" "*"
     "@lincode/filetypes" "*"
