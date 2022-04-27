@@ -52,7 +52,7 @@ const Game = () => {
        outlineHiddenColor="red"
        outlinePulse={1000}
        outlinePattern="pattern.jpeg"
-       mapPhysics={1}
+       repulsion={1}
       >
         <Model src="gallery.glb" scale={20} physics="map">
           <Find
