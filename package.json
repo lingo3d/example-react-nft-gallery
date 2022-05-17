@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ffc-js-client-side-sdk": "^1.0.28",
+    "ffc-react-client-sdk": "^0.0.10",
     "@lincode/react-anim-text": "^1.0.1",
     "@xstate/react": "^3.0.0",
     "lingo3d-react": "^1.2.118",
