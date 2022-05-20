@@ -119,6 +119,46 @@ const Game = ({ flags }) => {
           />
         </ThirdPersonCamera>
 
+        {
+          flags['粉衣小姐姐'] === "true" &&
+          <Model
+            src="Anime_character.fbx"
+            physics="map"
+            scale={1}
+            rotationX={-180.00}
+            rotationY={240.00}
+            rotationZ={-180.00}
+            x={98.72}
+            y={-408.38}
+            z={-680.47}
+            pbr
+          />
+        }
+        {
+          flags['女仆小姐姐'] === "true" &&
+          <Model
+            src="nvpu.fbx"
+            physics="character"
+            scale={1}
+            rotationY={-25.00}
+            x={-101.52}
+            y={-410.48}
+            z={-807.63}
+            pbr
+          />
+        }
+        {
+          flags['星际之门'] === "true" &&
+          <Model
+            src="星际门.fbx"
+            physics="map-debug"
+            scale={1.5}
+            x={51.52}
+            y={-389.11}
+            z={-809.04}
+            pbr
+          />
+        }
         <Keyboard
           onKeyPress={key => {
             if (key === "w") {

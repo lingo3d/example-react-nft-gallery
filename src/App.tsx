@@ -24,5 +24,5 @@ const App = () => {
 }
 
 
-export default withFfcConsumer()(App);
-// export default App
+// export default withFfcConsumer()(App);
+export default App

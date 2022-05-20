@@ -3,7 +3,6 @@ import './index.css'
 import App from './App'
 import { asyncWithFfcProvider } from 'ffc-react-client-sdk'
 
-// ReactDOM.render(<App />, document.getElementById('root'))
 
 (async () => {
     const FfcProvider = await asyncWithFfcProvider({
