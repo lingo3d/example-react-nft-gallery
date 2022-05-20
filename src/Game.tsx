@@ -6,21 +6,17 @@ import {
   Model,
   Reticle,
   ThirdPersonCamera,
-  FirstPersonCamera,
   types,
-  usePreload,
-  Editor,
   useSpring,
   useWindowSize,
   World,
   Cube,
-  Sphere
 } from 'lingo3d-react'
 import { useRef, useState } from 'react'
 import './App.css'
 import poseMachine from './stateMachines/poseMachine'
-import AnimText from "@lincode/react-anim-text"
 import { withFfcConsumer } from 'ffc-react-client-sdk';
+
 
 const Game = ({ flags }) => {
   const botRef = useRef<types.Model>(null)
@@ -44,7 +40,7 @@ const Game = ({ flags }) => {
   })
 
 
-  const [mouseOver, setMouseOver] = useState([true, true, true, true, true, true])
+  const [mouseOver, setMouseOver] = useState(true)
 
   const camX = mouseOver ? 25 : 0
   const camY = mouseOver ? 50 : 50
@@ -57,11 +53,6 @@ const Game = ({ flags }) => {
   const windowSize = useWindowSize()
   const fov = windowSize.width < windowSize.height ? 100 : 75
 
-  const showPresentationOfEachPanel = flags['一层墙壁画'] === "true";
-  console.log(showPresentationOfEachPanel);
-
-  const aCRNs = ["a1_CRN.a1_0", "a2_CRN.a2_0", "a3_CRN.a3_0", "a4_CRN.a4_0", "a5_CRN.a5_0", "a6_CRN.a6_0",
-    "b7_CRN.b7_0", "b8_CRN.b8_0", "b9_CRN.b9_0", "b10_CRN.b10_0", "b11_CRN.b11_0", "b12_CRN.b12_0"]
   return (
     <>
       <World
@@ -78,136 +69,56 @@ const Game = ({ flags }) => {
         repulsion={1}
       >
         <Model src="gallery.glb" scale={20} physics="map" >
-          {
-            aCRNs.map((value, index) => {
-              let returnHtml = (<HTML key={value}>
-                <div style={{ padding: "10px", color: "white", backgroundColor: 'black', transform: "translateY(-2em) translateX(0em)" }}>
-                  <h2>
-                    画名称: {value}
-                  </h2>
-                  <h2>
-                    画顺序: {index}
-                  </h2>
-                  {/* <AnimText key={"animText-name-" + value} style={{ fontWeight: "bold", fontSize: 20 }} duration={1000}>
-                    画名称: {value}
-                  </AnimText>
-                  <AnimText key={"animText-index-" + value} duration={1000}>
-                    画顺序: {index}
-                  </AnimText> */}
-                </div>
-              </HTML>)
-              if (showPresentationOfEachPanel === true) {
-                returnHtml = (<HTML key={value}>
-                  <div style={{ color: "white", transform: "translateY(-12em) translateX(3em)" }}>
-                    <iframe src='https://lingo3d.com/' width={600} height={400}>
-
-                    </iframe>
+          <Find
+            name={'a6_CRN.a6_0'}
+            outline={mouseOver}
+            onMouseOver={() => {
+              setMouseOver(true)
+            }}
+            onMouseOut={() => {
+              setMouseOver(false)
+            }}
+          >
+            {
+              (mouseOver === true) && (
+                <HTML>
+                  <div style={{ padding: "10px", color: "white", transform: "translateY(-5em) translateX(-8em)" }}>
+                    <h2 style={{ width: "260px" }}>
+                      罗兰·英格斯·怀德（Laura Elizabeth Ingalls Wilder，1867～1957）出生于威斯康新州的大森林。童年时的生活足迹几乎遍及美国西部，15岁时就为拓荒者…
+                    </h2>
                   </div>
                 </HTML>)
-              }
-
-              return (
-                <Find
-                  name={value}
-                  outline={mouseOver[index]}
-                  onMouseOver={() => {
-                    let mos = [false, false, false, false, false, false];
-                    mos[index] = true
-                    setMouseOver(mos)
-                  }}
-                  onMouseOut={() => {
-                    let mos = [false, false, false, false, false, false];
-                    mos[index] = false
-                    setMouseOver(mos)
-                  }}
-                >
-                  {
-                    (mouseOver[index] === true) && (
-                      returnHtml
-                    )
-                  }
-                </Find>
-              );
-            })
-          }
+            }
+          </Find>
         </Model>
-        {
-          flags['人称视角'] === "第三人称视角" ?
-            <ThirdPersonCamera
-              mouseControl
-              active
-              innerY={ySpring}
-              innerZ={zSpring}
-              innerX={xSpring}
-              fov={fov}
-            >
-              <Model
-                src="bot.fbx"
-                ref={botRef}
-                physics="character"
-                animations={{
-                  idle: "idle.fbx",
-                  running: "running.fbx",
-                  jumping: "falling.fbx"
-                }}
-                animation={pose.value as any}
-                width={50}
-                depth={50}
-                x={243.19}
-                y={-910.47}
-                z={-577.26}
-                pbr
-              />
-            </ThirdPersonCamera>
-            :
-            <FirstPersonCamera
-              mouseControl
-              active
-              fov={fov}
-            >
-              <Model
-                src="bot.fbx"
-                ref={botRef}
-                physics="character"
-                animations={{
-                  idle: "idle.fbx",
-                  running: "running.fbx",
-                  jumping: "falling.fbx"
-                }}
-                animation={pose.value as any}
-                width={50}
-                depth={50}
-                x={243.19}
-                y={-910.47}
-                z={-597.26}
-                pbr
-              />
-            </FirstPersonCamera>
-        }
-        {
-          flags['秘境---灵魂萃洗---淬体境'] !== "不展示" &&
-          <Cube rotationX={45}
-            rotationY={30}
-            rotationZ={60}
-            scale={2}
-            x={-700}
-            y={-1000}
-            z={-200}
-            physics="map" />
-        }
-        {
-          flags['秘境---暗黑朋克屋'] === "true" &&
+        <ThirdPersonCamera
+          mouseControl
+          active
+          innerY={ySpring}
+          innerZ={zSpring}
+          innerX={xSpring}
+          fov={fov}
+        >
           <Model
-            src="room1.fbx"
-            physics="map"
-            scale={2}
-            rotationY={0}
-            x={600}
-            y={-370}
-            z={350}
+            src="bot.fbx"
+            ref={botRef}
+            physics="character"
+            animations={{
+              idle: "idle.fbx",
+              running: "running.fbx",
+              jumping: "falling.fbx"
+            }}
+            animation={pose.value as any}
+            width={50}
+            depth={50}
+            scale={0.8}
+            x={243.19}
+            y={-910.47}
+            z={-577.26}
             pbr
           />
-        }
+        </ThirdPersonCamera>
+
         <Keyboard
           onKeyPress={key => {
             if (key === "w") {
@@ -228,7 +139,4 @@ const Game = ({ flags }) => {
   )
 }
 
-
-
 export default withFfcConsumer()(Game);
-// export default App
