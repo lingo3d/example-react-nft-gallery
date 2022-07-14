@@ -129,12 +129,19 @@ const Game = () => {
       {/* virtual joystick */}
       {/* 虚拟摇杆 */}
       <Joystick
-        onPress={(e) => {
+        onMove={(e) => {
           const dummy = dummyRef.current;
           if (!dummy) return;
 
           dummy.strideForward = -e.y * 5;
           dummy.strideRight = -e.x * 5;
+        }}
+        onMoveEnd={() => {
+          const dummy = dummyRef.current;
+          if (!dummy) return;
+
+          dummy.strideForward = 0;
+          dummy.strideRight = 0;
         }}
       />
     </World>
