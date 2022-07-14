@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "examples/nft-gallery"
+    "deploy": "lingodeploy examples/nft-gallery"
   },
   "dependencies": {
     "@lincode/react-anim-text": "^1.0.2",
