@@ -10,13 +10,13 @@ specifiers:
   postcss: ^8.4.14
   react: ^18.2.0
   react-dom: ^18.2.0
-  tailwindcss: ^3.1.5
+  tailwindcss: ^3.1.6
   typescript: ^4.7.4
-  vite: ^2.9.13
+  vite: ^2.9.14
 
 dependencies:
   '@lincode/react-anim-text': 1.0.2_react@18.2.0
-  lingo3d-react: 1.11.39_react@18.2.0
+  lingo3d-react: 1.12.5_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -522,7 +522,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.2
-      caniuse-lite: 1.0.30001366
+      caniuse-lite: 1.0.30001367
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -551,8 +551,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001366
-      electron-to-chromium: 1.4.189
+      caniuse-lite: 1.0.30001367
+      electron-to-chromium: 1.4.192
       node-releases: 2.0.6
       update-browserslist-db: 1.0.4_browserslist@4.21.2
     dev: true
@@ -562,8 +562,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /caniuse-lite/1.0.30001366:
-    resolution: {integrity: sha512-yy7XLWCubDobokgzudpkKux8e0UOOnLHE6mlNJBzT3lZJz6s5atSEzjoL+fsCPkI0G8MP5uVdDx1ur/fXEWkZA==}
+  /caniuse-lite/1.0.30001367:
+    resolution: {integrity: sha512-XDgbeOHfifWV3GEES2B8rtsrADx4Jf+juKX2SICJcaUhjYBO3bR96kvEIHa15VU6ohtOhBZuPGGYGbXMRn0NCw==}
     dev: true
 
   /cannon-es/0.19.0:
@@ -658,8 +658,8 @@ packages:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
     dev: true
 
-  /electron-to-chromium/1.4.189:
-    resolution: {integrity: sha512-dQ6Zn4ll2NofGtxPXaDfY2laIa6NyCQdqXYHdwH90GJQW0LpJJib0ZU/ERtbb0XkBEmUD2eJtagbOie3pdMiPg==}
+  /electron-to-chromium/1.4.192:
+    resolution: {integrity: sha512-8nCXyIQY9An88NXAp+PuPy5h3/w5ZY7Iu2lag65Q0XREprcat5F8gKhoHsBUnQcFuCRnmevpR8yEBYRU3d2HDw==}
     dev: true
 
   /esbuild-android-64/0.14.49:
@@ -1036,8 +1036,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /lingo3d-react/1.11.39_react@18.2.0:
-    resolution: {integrity: sha512-ozItkjwvNMWMO/EFc5MN4lNHkCEncWgQbjQa0e8EqoGINiJ+uERq0uCJycuexqFjRhD7Dljr6VNoMxhjRNO5ag==}
+  /lingo3d-react/1.12.5_react@18.2.0:
+    resolution: {integrity: sha512-ME6KYpJZXMqYzHFZaBhcIWoeKBlIr/tpYbb+exmPZKDldF+MV0s7efrDQdEb+QIHrByq3lihtFpvFBk5v3pR/Q==}
     peerDependencies:
       react: '18'
     dependencies:
@@ -1047,7 +1047,7 @@ packages:
       '@lincode/utils': 1.2.51
       '@tweakpane/core': 1.1.0
       '@types/three': 0.141.0
-      lingo3d: 1.11.39
+      lingo3d: 1.12.5
       nanoid: 4.0.0
       popmotion: 11.0.3
       preact: 10.10.0
@@ -1056,8 +1056,8 @@ packages:
       tweakpane: 3.1.0
     dev: false
 
-  /lingo3d/1.11.39:
-    resolution: {integrity: sha512-tJNd8QWDgS3MbE7MnQovvtwtwr4ZPgTBOaNLld6+RmvtzeyHGNsz5m8ZPLBxwB3EDorwCCpkTRSbfgukDLZ/Iw==}
+  /lingo3d/1.12.5:
+    resolution: {integrity: sha512-4VkMIsWfVLhXsbaFKBN98DPRgY7ZpVaJTkaM+puGT9cIj5svjcz8dKxYwAeGh235j9fOUr6pumwFs8qvbLNGrw==}
     dependencies:
       '@lincode/events': 1.0.24
       '@lincode/filetypes': 1.0.1
@@ -1393,8 +1393,8 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /rollup/2.76.0:
-    resolution: {integrity: sha512-9jwRIEY1jOzKLj3nsY/yot41r19ITdQrhs+q3ggNWhr9TQgduHqANvPpS32RNpzGklJu3G1AJfvlZLi/6wFgWA==}
+  /rollup/2.77.0:
+    resolution: {integrity: sha512-vL8xjY4yOQEw79DvyXLijhnhh+R/O9zpF/LEgkCebZFtb6ELeN9H3/2T0r8+mp+fFTBHZ5qGpOpW2ela2zRt3g==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1549,7 +1549,7 @@ packages:
       esbuild: 0.14.49
       postcss: 8.4.14
       resolve: 1.22.1
-      rollup: 2.76.0
+      rollup: 2.77.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

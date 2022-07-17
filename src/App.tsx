@@ -153,7 +153,7 @@ const Game = () => {
 const App = () => {
   const progress = usePreload(
     ["env.hdr", "gallery.glb", "pattern.jpeg"],
-    "63.2mb"
+    "32.7mb"
   );
 
   if (progress < 100)
